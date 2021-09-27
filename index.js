@@ -233,4 +233,4 @@ class Graph2D {
   };
 }
 
-exports = Graph2D;
+module.exports = Graph2D;

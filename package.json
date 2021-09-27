@@ -14,7 +14,11 @@
   "author": {
     "name": "nemethe",
     "email": "public.nemethe@gmail.com",
-    "url": "http://nemethe.pl/"
+    "url": "https://nemethe.pl/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nemethe/graph2d.git"
   },
   "license": "MIT"
 }
