@@ -1,0 +1,20 @@
+{
+  "name": "graph2d",
+  "version": "1.0.0",
+  "description": "Efficient iterable graph data structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "readme": "README.md",
+  "keywords": [
+    "graph",
+    "graph2d"
+  ],
+  "author": {
+    "name": "nemethe",
+    "email": "public.nemethe@gmail.com",
+    "url": "http://nemethe.pl/"
+  },
+  "license": "MIT"
+}
