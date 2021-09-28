@@ -9,9 +9,9 @@ Efficient iterable graph data structure.
 ## Usage
 
 ```
-const Graph2D = require("graph2d");
-
 // EXAMPLE 1
+
+const Graph2D = require("graph2d");
 
 const graph = new Graph2D();
 
@@ -22,7 +22,9 @@ for (let i = 1; i < 4; i++) {
 
 console.log(graph.map((text) => text + " str"));
 // [ 'test 3 str', 'test 2 str', 'test 1 str', 'first str' ]
+```
 
+```
 // EXAMPLE 2
 
 const graph2 = new Graph2D(true);
@@ -43,7 +45,9 @@ graph2.getItem("id1").next.remove();
 
 console.log(graph2.getItem("id1").next.get());
 // test 3
+```
 
+```
 // EXAMPLE 3
 
 const graph3 = new Graph2D(true, 100);
@@ -87,11 +91,11 @@ graph2d.find(callbackFunction),
 ### GraphItem Methods & References
 
 ```
-graph2d.set(data)
-graph2d.get(key), // optional key
-graph2d.remove(),
-graph2d.next
-graph2d.prev
+graphItem.set(data)
+graphItem.get(key), // optional key
+graphItem.remove(),
+graphItem.next
+graphItem.prev
 ```
 
 ## License
