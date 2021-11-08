@@ -186,34 +186,34 @@ class Graph2D {
 
   length = () => Object.keys(this.items).length;
 
-  map = (callback) => {
+  map = (callback, graphItem = false) => {
     let arr = [];
     let item = this.last;
 
     while (item) {
-      callback && arr.push(callback(item.data, item.index));
+      callback && arr.push(callback(graphItem ? item : item.data, item.index));
       item = item.prev;
     }
 
     return arr;
   };
 
-  forEach = (callback) => {
+  forEach = (callback, graphItem = false) => {
     let item = this.last;
 
     while (item) {
-      callback(item.data, item.index);
+      callback(graphItem ? item : item.data, item.index);
       item = item.prev;
     }
   };
 
-  filter = (callback) => {
+  filter = (callback, graphItem = false) => {
     let arr = [];
     let item = this.last;
 
     while (item) {
-      if (callback(item.data, item.index)) {
-        arr.push(item.data);
+      if (callback(graphItem ? item : item.data, item.index)) {
+        arr.push(graphItem ? item : item.data);
       }
       item = item.prev;
     }
@@ -221,12 +221,12 @@ class Graph2D {
     return arr;
   };
 
-  find = (callback) => {
+  find = (callback, graphItem = false) => {
     let item = this.last;
 
     while (item) {
-      if (callback(item.data, item.index)) {
-        return item.data;
+      if (callback(graphItem ? item : item.data, item.index)) {
+        return graphItem ? item : item.data;
       }
       item = item.prev;
     }
