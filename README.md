@@ -63,8 +63,6 @@ console.log(graph3.find((text) => text == "test 55"));
 
 console.log(graph3.find((text) => text == "test 155"));
 // test 155
-
-console.log(graph3);
 ```
 
 ### Graph2D Methods
@@ -72,7 +70,7 @@ console.log(graph3);
 ```
 new Graph2D(false); // if false graph will get auto increment number id
 
-new Graph2D(true); // if true you will have to put string as second argument of getItem
+new Graph2D(true); // if true you will have to put string ID as second argument of addItem
 
 new Graph2D(true, 5000); // graph can store max 5000 items, but automatically remove least used items when you will cross the barrier
 ```

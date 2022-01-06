@@ -54,6 +54,8 @@ class GraphItem {
     !this.graph2D.initialEnabled && this.graph2D.pushEmpty(this.index);
     this.graph2D.memoryHierarchy &&
       this.graph2D.removeInMemoryHierarchy(this.index);
+
+    delete this.graph2D.items[this.index];
   };
 
   skip = () => {
@@ -88,16 +90,8 @@ class Graph2D {
     this.last = null;
     this.emptys = [];
 
-    const {
-      addItem,
-      getItem,
-      removeItem,
-      length,
-      map,
-      forEach,
-      filter,
-      find,
-    } = this;
+    const { addItem, getItem, removeItem, length, map, forEach, filter, find } =
+      this;
 
     return {
       addItem,
@@ -133,7 +127,6 @@ class Graph2D {
 
   pushEmpty = (intNumber) => {
     this.emptys.push(intNumber);
-    delete this.items[intNumber];
   };
 
   addItem = (data, initial = null) => {
