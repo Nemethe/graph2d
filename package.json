@@ -1,6 +1,6 @@
 {
   "name": "graph2d",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Efficient iterable graph data structure",
   "main": "index.js",
   "scripts": {
